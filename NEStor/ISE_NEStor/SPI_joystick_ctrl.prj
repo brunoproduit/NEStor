@@ -1,2 +1,0 @@
-vhdl work "../vhd/local.vhd"
-vhdl work "../vhd/SPI_joystick_ctrl.vhd"

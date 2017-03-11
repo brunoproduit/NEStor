@@ -9,7 +9,7 @@ Synthetisable small multiplayer shooting game written in VHDL
 NEStor/vhd
 
 **ISE project**
-NEStor/ISE_NEStor
+NEStor/ISE_NEStor.zip
 
 **Target device**
 Xilinx Spartan 6 with a 800x600 VGA screen

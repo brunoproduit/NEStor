@@ -1,8 +1,0 @@
-INTSTYLE=impact
-INFILE=/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/impact.xsl
-OUTFILE=/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/impact.xsl
-FAMILY=Single
-PART=Single
-WORKINGDIR=/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor
-LICENSE=iMPACT
-USER_INFO=iMPACT

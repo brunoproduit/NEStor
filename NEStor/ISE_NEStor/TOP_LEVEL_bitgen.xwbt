@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/TOP_LEVEL.ncd
-OUTFILE=/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/TOP_LEVEL.bit
-FAMILY=Spartan6
-PART=xc6slx16-2csg324
-WORKINGDIR=/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor
-LICENSE=ISE
-USER_INFO=174116392_174116393_210614678_009
