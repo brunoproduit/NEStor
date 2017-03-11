@@ -1,0 +1,2141 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: TOP_LEVEL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP_LEVEL.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP_LEVEL"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : TOP_LEVEL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/mur_sprite_ram.vhd" into library work
+Parsing entity <mur_sprite_ram>.
+Parsing architecture <mur_sprite_ram_a> of entity <mur_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/sol_sprite_ram.vhd" into library work
+Parsing entity <sol_sprite_ram>.
+Parsing architecture <sol_sprite_ram_a> of entity <sol_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/collision_map_ram.vhd" into library work
+Parsing entity <collision_map_ram>.
+Parsing architecture <collision_map_ram_a> of entity <collision_map_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/grudu_up_sprite_ram.vhd" into library work
+Parsing entity <grudu_up_sprite_ram>.
+Parsing architecture <grudu_up_sprite_ram_a> of entity <grudu_up_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/grudu_left_sprite_ram.vhd" into library work
+Parsing entity <grudu_left_sprite_ram>.
+Parsing architecture <grudu_left_sprite_ram_a> of entity <grudu_left_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/grudu_down_sprite_ram.vhd" into library work
+Parsing entity <grudu_down_sprite_ram>.
+Parsing architecture <grudu_down_sprite_ram_a> of entity <grudu_down_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/grudu_right_sprite_ram.vhd" into library work
+Parsing entity <grudu_right_sprite_ram>.
+Parsing architecture <grudu_right_sprite_ram_a> of entity <grudu_right_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/nestor_up_sprite_ram.vhd" into library work
+Parsing entity <nestor_up_sprite_ram>.
+Parsing architecture <nestor_up_sprite_ram_a> of entity <nestor_up_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/nestor_left_sprite_ram.vhd" into library work
+Parsing entity <nestor_left_sprite_ram>.
+Parsing architecture <nestor_left_sprite_ram_a> of entity <nestor_left_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/nestor_down_sprite_ram.vhd" into library work
+Parsing entity <nestor_down_sprite_ram>.
+Parsing architecture <nestor_down_sprite_ram_a> of entity <nestor_down_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/nestor_right_sprite_ram.vhd" into library work
+Parsing entity <nestor_right_sprite_ram>.
+Parsing architecture <nestor_right_sprite_ram_a> of entity <nestor_right_sprite_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/end_game_screen1_ram.vhd" into library work
+Parsing entity <end_game_screen1_ram>.
+Parsing architecture <end_game_screen1_ram_a> of entity <end_game_screen1_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/end_game_screen0_ram.vhd" into library work
+Parsing entity <end_game_screen0_ram>.
+Parsing architecture <end_game_screen0_ram_a> of entity <end_game_screen0_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/nestor_text_ram.vhd" into library work
+Parsing entity <nestor_text_ram>.
+Parsing architecture <nestor_text_ram_a> of entity <nestor_text_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/grudu_text_ram.vhd" into library work
+Parsing entity <grudu_text_ram>.
+Parsing architecture <grudu_text_ram_a> of entity <grudu_text_ram>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/local.vhd" into library work
+Parsing package <local>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/spiMode0.vhd" into library work
+Parsing entity <spiMode0>.
+Parsing architecture <Behavioral> of entity <spimode0>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/spiCtrl.vhd" into library work
+Parsing entity <spiCtrl>.
+Parsing architecture <Behavioral> of entity <spictrl>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/ClkDiv_66_67kHz.vhd" into library work
+Parsing entity <ClkDiv_66_67kHz>.
+Parsing architecture <Behavioral> of entity <clkdiv_66_67khz>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/VGA.vhd" into library work
+Parsing entity <VGA>.
+Parsing architecture <Behavioral> of entity <vga>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/PmodJSTK.vhd" into library work
+Parsing entity <PmodJSTK>.
+Parsing architecture <Behavioral> of entity <pmodjstk>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/player1.vhd" into library work
+Parsing entity <player1>.
+Parsing architecture <Behavioral> of entity <player1>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/player0.vhd" into library work
+Parsing entity <player0>.
+Parsing architecture <Behavioral> of entity <player0>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" into library work
+Parsing entity <graphic>.
+Parsing architecture <Behavioral> of entity <graphic>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/game_ctrl.vhd" into library work
+Parsing entity <game_ctrl>.
+Parsing architecture <Behavioral> of entity <game_ctrl>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/counter.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <Behavioral> of entity <counter>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/ClkDiv_5Hz.vhd" into library work
+Parsing entity <ClkDiv_5Hz>.
+Parsing architecture <Behavioral> of entity <clkdiv_5hz>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/Bullet_ctrl.vhd" into library work
+Parsing entity <bullet_ctrl>.
+Parsing architecture <Behavioral> of entity <bullet_ctrl>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/Bullet.vhd" into library work
+Parsing entity <Bullet>.
+Parsing architecture <Behavioral> of entity <bullet>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/DCM1.vhd" into library work
+Parsing entity <DCM1>.
+Parsing architecture <xilinx> of entity <dcm1>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/TOP_LEVEL.vhd" into library work
+Parsing entity <TOP_LEVEL>.
+Parsing architecture <Behavioral> of entity <top_level>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <TOP_LEVEL> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/TOP_LEVEL.vhd" Line 614: Using initial value "00000000" for snddata_p1_s since it is never assigned
+WARNING:HDLCompiler:871 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/TOP_LEVEL.vhd" Line 633: Using initial value "00000000" for snddata_p0_s since it is never assigned
+
+Elaborating entity <DCM1> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <PmodJSTK> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <spiCtrl> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <spiMode0> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/spiMode0.vhd" Line 243. Case statement is complete. others clause is never selected
+
+Elaborating entity <ClkDiv_66_67kHz> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ClkDiv_5Hz> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <mur_sprite_ram> (architecture <mur_sprite_ram_a>) from library <work>.
+
+Elaborating entity <sol_sprite_ram> (architecture <sol_sprite_ram_a>) from library <work>.
+
+Elaborating entity <grudu_up_sprite_ram> (architecture <grudu_up_sprite_ram_a>) from library <work>.
+
+Elaborating entity <grudu_left_sprite_ram> (architecture <grudu_left_sprite_ram_a>) from library <work>.
+
+Elaborating entity <grudu_down_sprite_ram> (architecture <grudu_down_sprite_ram_a>) from library <work>.
+
+Elaborating entity <grudu_right_sprite_ram> (architecture <grudu_right_sprite_ram_a>) from library <work>.
+
+Elaborating entity <nestor_up_sprite_ram> (architecture <nestor_up_sprite_ram_a>) from library <work>.
+
+Elaborating entity <nestor_left_sprite_ram> (architecture <nestor_left_sprite_ram_a>) from library <work>.
+
+Elaborating entity <nestor_down_sprite_ram> (architecture <nestor_down_sprite_ram_a>) from library <work>.
+
+Elaborating entity <nestor_right_sprite_ram> (architecture <nestor_right_sprite_ram_a>) from library <work>.
+
+Elaborating entity <nestor_text_ram> (architecture <nestor_text_ram_a>) from library <work>.
+
+Elaborating entity <grudu_text_ram> (architecture <grudu_text_ram_a>) from library <work>.
+
+Elaborating entity <end_game_screen0_ram> (architecture <end_game_screen0_ram_a>) from library <work>.
+
+Elaborating entity <end_game_screen1_ram> (architecture <end_game_screen1_ram_a>) from library <work>.
+
+Elaborating entity <collision_map_ram> (architecture <collision_map_ram_a>) from library <work>.
+
+Elaborating entity <VGA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <player0> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/player0.vhd" Line 70: Assignment to posx_p1_s ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/player0.vhd" Line 71: Assignment to posy_p1_s ignored, since the identifier is never used
+
+Elaborating entity <player1> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/player1.vhd" Line 78: Assignment to posx_p0_s ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/player1.vhd" Line 79: Assignment to posy_p0_s ignored, since the identifier is never used
+
+Elaborating entity <Bullet> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <bullet_ctrl> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/Bullet_ctrl.vhd" Line 116. Case statement is complete. others clause is never selected
+
+Elaborating entity <game_ctrl> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/game_ctrl.vhd" Line 75. Case statement is complete. others clause is never selected
+
+Elaborating entity <counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <graphic> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 317. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 353. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 628: affich_mur_sol_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 629: mur_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 631: sol_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 636: affich_nestor_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 638: nestor_up_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 639: nestor_up_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 643: nestor_left_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 644: nestor_left_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 648: nestor_down_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 649: nestor_down_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 652: nestor_right_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 653: nestor_right_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 660: affich_grudu_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 662: grudu_up_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 663: grudu_up_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 667: grudu_left_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 668: grudu_left_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 672: grudu_down_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 673: grudu_down_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 676: grudu_right_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 677: grudu_right_sprite_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 685: affich_b0_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 686: bullet0_p0_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 687: bullet0_p0_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 691: affich_b1_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 692: bullet1_p0_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 693: bullet1_p0_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 697: affich_b2_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 698: bullet2_p0_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 699: bullet2_p0_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 703: affich_b0_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 704: bullet0_p1_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 705: bullet0_p1_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 709: affich_b1_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 710: bullet1_p1_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 711: bullet1_p1_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 715: affich_b2_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 716: bullet2_p1_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 717: bullet2_p1_sprite_data_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 725: affich_nestor_text_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 726: nestor_text_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 732: affich_nestor_hp_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 734: hp_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 740: hp_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 746: hp_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 752: hp_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 758: hp_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 764: hp_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 770: hp_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 776: hp_p0_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 787: affich_grudu_text_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 788: grudu_text_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 795: affich_grudu_hp_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 797: hp_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 803: hp_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 809: hp_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 815: hp_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 821: hp_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 827: hp_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 833: hp_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 839: hp_p1_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 852: affich_end_screen0_game_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 853: end_game_screen0_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 854: end_p0_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 857: end_p1_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 864: affich_end_screen1_game_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 866: end_game_screen1_data_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 867: end_p0_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd" Line 870: end_p1_i should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TOP_LEVEL>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/TOP_LEVEL.vhd".
+INFO:Xst:3210 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/TOP_LEVEL.vhd" line 739: Output port <CLK_OUT4> of the instance <DCM_descr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/TOP_LEVEL.vhd" line 739: Output port <LOCKED> of the instance <DCM_descr> is unconnected or connected to loadless signal.
+    Found 11-bit comparator greater for signal <buttons_p0_s<4>> created at line 718
+    Found 11-bit comparator greater for signal <buttons_p0_s<3>> created at line 719
+    Found 11-bit comparator greater for signal <buttons_p0_s<2>> created at line 720
+    Found 11-bit comparator greater for signal <buttons_p0_s<1>> created at line 721
+    Found 11-bit comparator greater for signal <buttons_p1_s<4>> created at line 728
+    Found 11-bit comparator greater for signal <buttons_p1_s<3>> created at line 729
+    Found 11-bit comparator greater for signal <buttons_p1_s<2>> created at line 730
+    Found 11-bit comparator greater for signal <buttons_p1_s<1>> created at line 731
+    Summary:
+	inferred   8 Comparator(s).
+Unit <TOP_LEVEL> synthesized.
+
+Synthesizing Unit <DCM1>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/ipcore_dir/DCM1.vhd".
+    Summary:
+	no macro.
+Unit <DCM1> synthesized.
+
+Synthesizing Unit <PmodJSTK>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/PmodJSTK.vhd".
+    Summary:
+	no macro.
+Unit <PmodJSTK> synthesized.
+
+Synthesizing Unit <spiCtrl>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/spiCtrl.vhd".
+    Found 1-bit register for signal <SS>.
+    Found 1-bit register for signal <getByte>.
+    Found 8-bit register for signal <sndData>.
+    Found 40-bit register for signal <tmpSR>.
+    Found 40-bit register for signal <DOUT>.
+    Found 3-bit register for signal <byteCnt>.
+    Found 3-bit register for signal <STATE>.
+    Found finite state machine <FSM_0> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK (falling_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | stidle                                         |
+    | Power Up State     | stidle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <byteCnt[2]_GND_15_o_add_1_OUT> created at line 115.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  93 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <spiCtrl> synthesized.
+
+Synthesizing Unit <spiMode0>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/spiMode0.vhd".
+    Found 1-bit register for signal <CE>.
+    Found 1-bit register for signal <BUSY>.
+    Found 8-bit register for signal <rSR>.
+    Found 8-bit register for signal <wSR>.
+    Found 2-bit register for signal <STATE>.
+    Found 4-bit register for signal <bitCount>.
+    Found finite state machine <FSM_1> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (falling_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <bitCount[3]_GND_17_o_add_8_OUT> created at line 189.
+    Found 4-bit comparator greater for signal <PWR_12_o_INV_16_o> created at line 192
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <spiMode0> synthesized.
+
+Synthesizing Unit <ClkDiv_66_67kHz>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/ClkDiv_66_67kHz.vhd".
+    Found 1-bit register for signal <CLKOUT>.
+    Found 10-bit register for signal <clkCount>.
+    Found 10-bit adder for signal <clkCount[9]_GND_18_o_add_1_OUT> created at line 60.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ClkDiv_66_67kHz> synthesized.
+
+Synthesizing Unit <ClkDiv_5Hz>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/ClkDiv_5Hz.vhd".
+    Found 1-bit register for signal <CLKOUT>.
+    Found 24-bit register for signal <clkCount>.
+    Found 24-bit adder for signal <clkCount[23]_GND_35_o_add_1_OUT> created at line 60.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ClkDiv_5Hz> synthesized.
+
+Synthesizing Unit <VGA>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/VGA.vhd".
+    Found 11-bit register for signal <hcounter_s>.
+    Found 10-bit register for signal <vcounter_s>.
+    Found 1-bit register for signal <VS_o>.
+    Found 1-bit register for signal <blank_o>.
+    Found 1-bit register for signal <HS_o>.
+    Found 11-bit adder for signal <hcounter_s[10]_GND_51_o_add_1_OUT> created at line 102.
+    Found 10-bit adder for signal <vcounter_s[9]_GND_51_o_add_5_OUT> created at line 120.
+    Found 11-bit comparator greater for signal <hcounter_s[10]_GND_51_o_LessThan_10_o> created at line 128
+    Found 10-bit comparator greater for signal <vcounter_s[9]_PWR_30_o_LessThan_11_o> created at line 128
+    Found 11-bit comparator lessequal for signal <n0015> created at line 129
+    Found 11-bit comparator greater for signal <hcounter_s[10]_GND_51_o_LessThan_13_o> created at line 129
+    Found 10-bit comparator lessequal for signal <n0019> created at line 130
+    Found 10-bit comparator greater for signal <vcounter_s[9]_PWR_30_o_LessThan_15_o> created at line 130
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <VGA> synthesized.
+
+Synthesizing Unit <player0>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/player0.vhd".
+WARNING:Xst:647 - Input <posX_p1_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <posY_p1_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <orient_p0_s>.
+    Found 17-bit register for signal <count>.
+    Found 8-bit register for signal <posX_p0_s>.
+    Found 8-bit register for signal <posY_p0_s>.
+    Found 6-bit register for signal <hp_p0_s>.
+    Found 9-bit subtractor for signal <GND_52_o_GND_52_o_sub_3_OUT> created at line 87.
+    Found 9-bit subtractor for signal <GND_52_o_GND_52_o_sub_10_OUT> created at line 94.
+    Found 18-bit adder for signal <n0141> created at line 87.
+    Found 18-bit adder for signal <n0142> created at line 88.
+    Found 17-bit adder for signal <n0144> created at line 94.
+    Found 18-bit adder for signal <n0145> created at line 95.
+    Found 9-bit adder for signal <n0189> created at line 101.
+    Found 17-bit adder for signal <n0148> created at line 101.
+    Found 9-bit adder for signal <n0222[8:0]> created at line 102.
+    Found 17-bit adder for signal <n0150> created at line 102.
+    Found 9-bit adder for signal <n0227[8:0]> created at line 108.
+    Found 16-bit adder for signal <n0153> created at line 108.
+    Found 9-bit adder for signal <n0193> created at line 109.
+    Found 17-bit adder for signal <n0156> created at line 109.
+    Found 17-bit adder for signal <count[16]_GND_52_o_add_97_OUT> created at line 143.
+    Found 8-bit adder for signal <posY_p0_s[7]_GND_52_o_add_113_OUT> created at line 183.
+    Found 8-bit adder for signal <posX_p0_s[7]_GND_52_o_add_119_OUT> created at line 195.
+    Found 6-bit subtractor for signal <GND_52_o_GND_52_o_sub_137_OUT<5:0>> created at line 258.
+    Found 9x9-bit multiplier for signal <n0205> created at line 87.
+    Found 9x8-bit multiplier for signal <n0219> created at line 101.
+    Found 8x8-bit multiplier for signal <n0229> created at line 108.
+    Found 9x8-bit multiplier for signal <n0234> created at line 109.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 17-bit comparator greater for signal <count[16]_PWR_31_o_LessThan_97_o> created at line 142
+    Found 8-bit comparator greater for signal <posY_p0_s[7]_PWR_31_o_LessThan_111_o> created at line 176
+    Found 8-bit comparator greater for signal <posX_p0_s[7]_PWR_31_o_LessThan_117_o> created at line 192
+    Found 6-bit comparator greater for signal <dead_p0_o> created at line 272
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred  18 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred  30 Latch(s).
+	inferred   4 Comparator(s).
+	inferred  99 Multiplexer(s).
+Unit <player0> synthesized.
+
+Synthesizing Unit <player1>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/player1.vhd".
+WARNING:Xst:647 - Input <posX_p0_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <posY_p0_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit register for signal <count>.
+    Found 8-bit register for signal <posY_p1_s>.
+    Found 2-bit register for signal <orient_p1_s>.
+    Found 6-bit register for signal <hp_p1_s>.
+    Found 8-bit register for signal <posX_p1_s>.
+    Found 9-bit subtractor for signal <GND_87_o_GND_87_o_sub_3_OUT> created at line 96.
+    Found 9-bit subtractor for signal <GND_87_o_GND_87_o_sub_10_OUT> created at line 103.
+    Found 18-bit adder for signal <n0141> created at line 96.
+    Found 18-bit adder for signal <n0142> created at line 97.
+    Found 17-bit adder for signal <n0144> created at line 103.
+    Found 18-bit adder for signal <n0145> created at line 104.
+    Found 9-bit adder for signal <n0189> created at line 110.
+    Found 17-bit adder for signal <n0148> created at line 110.
+    Found 9-bit adder for signal <n0225[8:0]> created at line 111.
+    Found 17-bit adder for signal <n0150> created at line 111.
+    Found 9-bit adder for signal <n0230[8:0]> created at line 117.
+    Found 16-bit adder for signal <n0153> created at line 117.
+    Found 9-bit adder for signal <n0193> created at line 118.
+    Found 17-bit adder for signal <n0156> created at line 118.
+    Found 17-bit adder for signal <count[16]_GND_87_o_add_97_OUT> created at line 149.
+    Found 8-bit adder for signal <posY_p1_s[7]_GND_87_o_add_113_OUT> created at line 189.
+    Found 8-bit adder for signal <posX_p1_s[7]_GND_87_o_add_119_OUT> created at line 201.
+    Found 6-bit subtractor for signal <GND_87_o_GND_87_o_sub_137_OUT<5:0>> created at line 264.
+    Found 9x9-bit multiplier for signal <n0208> created at line 96.
+    Found 9x8-bit multiplier for signal <n0222> created at line 110.
+    Found 8x8-bit multiplier for signal <n0232> created at line 117.
+    Found 9x8-bit multiplier for signal <n0237> created at line 118.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp1_s<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <map_addr_temp0_s<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 17-bit comparator greater for signal <count[16]_PWR_65_o_LessThan_97_o> created at line 148
+    Found 8-bit comparator greater for signal <posY_p1_s[7]_PWR_65_o_LessThan_111_o> created at line 182
+    Found 8-bit comparator greater for signal <posX_p1_s[7]_PWR_65_o_LessThan_117_o> created at line 198
+    Found 6-bit comparator greater for signal <dead_p1_o> created at line 279
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred  18 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred  30 Latch(s).
+	inferred   4 Comparator(s).
+	inferred  99 Multiplexer(s).
+Unit <player1> synthesized.
+
+Synthesizing Unit <Bullet>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/Bullet.vhd".
+    Found 8-bit register for signal <posY_s>.
+    Found 8-bit register for signal <posX_s>.
+    Found 15-bit register for signal <count_s>.
+    Found 1-bit register for signal <shot_s>.
+    Found 1-bit register for signal <hit_o>.
+    Found 2-bit register for signal <orient_bullet_s>.
+    Found 9-bit subtractor for signal <GND_119_o_GND_119_o_sub_6_OUT> created at line 99.
+    Found 9-bit subtractor for signal <GND_119_o_GND_119_o_sub_9_OUT> created at line 104.
+    Found 18-bit adder for signal <n0140> created at line 99.
+    Found 17-bit adder for signal <n0142> created at line 104.
+    Found 9-bit adder for signal <n0194> created at line 109.
+    Found 17-bit adder for signal <n0145> created at line 109.
+    Found 9-bit adder for signal <n0216[8:0]> created at line 114.
+    Found 16-bit adder for signal <n0148> created at line 114.
+    Found 15-bit adder for signal <count_s[14]_GND_119_o_add_19_OUT> created at line 160.
+    Found 8-bit adder for signal <posY_s[7]_GND_119_o_add_53_OUT> created at line 230.
+    Found 9-bit adder for signal <n0198> created at line 249.
+    Found 9-bit adder for signal <n0200> created at line 250.
+    Found 8-bit adder for signal <posX_s[7]_GND_119_o_add_65_OUT> created at line 254.
+    Found 8-bit adder for signal <posX_p_i[7]_GND_119_o_add_92_OUT> created at line 290.
+    Found 8-bit adder for signal <posX_p_i[7]_GND_119_o_add_94_OUT> created at line 304.
+    Found 8-bit adder for signal <posY_p_i[7]_GND_119_o_add_95_OUT> created at line 305.
+    Found 8-bit adder for signal <posX_p_i[7]_GND_119_o_add_96_OUT> created at line 311.
+    Found 8-bit adder for signal <posY_p_i[7]_GND_119_o_add_97_OUT> created at line 312.
+    Found 9x9-bit multiplier for signal <n0205> created at line 99.
+    Found 9x8-bit multiplier for signal <n0213> created at line 109.
+    Found 8x8-bit multiplier for signal <n0218> created at line 114.
+    Found 15-bit 4-to-1 multiplexer for signal <orient_bullet_s[1]_GND_119_o_wide_mux_17_OUT> created at line 95.
+    Found 1-bit 4-to-1 multiplexer for signal <orient_bullet_s[1]_GND_119_o_Mux_69_o> created at line 168.
+    Found 1-bit 4-to-1 multiplexer for signal <orient_bullet_s[1]_hit_o_Mux_70_o> created at line 168.
+    Found 8-bit 4-to-1 multiplexer for signal <posX_depart_s> created at line 286.
+    Found 8-bit 4-to-1 multiplexer for signal <posY_depart_s> created at line 286.
+    Found 8-bit comparator greater for signal <posY_s[7]_PWR_96_o_LessThan_46_o> created at line 223
+    Found 8-bit comparator greater for signal <posX_s[7]_PWR_96_o_LessThan_58_o> created at line 247
+    Found 8-bit comparator greater for signal <posY_adv_s[7]_posY_s[7]_LessThan_60_o> created at line 249
+    Found 9-bit comparator greater for signal <GND_119_o_BUS_0015_LessThan_62_o> created at line 249
+    Found 8-bit comparator greater for signal <posX_adv_s[7]_posX_s[7]_LessThan_63_o> created at line 250
+    Found 9-bit comparator greater for signal <GND_119_o_BUS_0016_LessThan_65_o> created at line 250
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred  15 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  36 Multiplexer(s).
+Unit <Bullet> synthesized.
+
+Synthesizing Unit <bullet_ctrl>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/Bullet_ctrl.vhd".
+WARNING:Xst:647 - Input <end_game_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <etat_present>.
+    Found 1-bit register for signal <shoot_b1_o>.
+    Found 1-bit register for signal <shoot_b2_o>.
+    Found 1-bit register for signal <shoot_b0_o>.
+    Found finite state machine <FSM_2> for signal <etat_present>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | game_clk_i (rising_edge)                       |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | depart                                         |
+    | Power Up State     | depart                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <bullet_ctrl> synthesized.
+
+Synthesizing Unit <game_ctrl>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/game_ctrl.vhd".
+    Found 2-bit register for signal <etat_present>.
+    Found finite state machine <FSM_3> for signal <etat_present>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | game_clk_i (rising_edge)                       |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | game                                           |
+    | Power Up State     | game                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <game_ctrl> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/counter.vhd".
+    Found 23-bit register for signal <blink_s>.
+    Found 23-bit adder for signal <blink_s[22]_GND_122_o_add_1_OUT> created at line 43.
+    Found 23-bit comparator greater for signal <blink_s[22]_PWR_99_o_LessThan_1_o> created at line 42
+    Found 23-bit comparator greater for signal <blink_o> created at line 50
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <graphic>.
+    Related source file is "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/vhd/graphic.vhd".
+WARNING:Xst:647 - Input <game_clk_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 12-bit subtractor for signal <GND_123_o_GND_123_o_sub_103_OUT> created at line 302.
+    Found 11-bit subtractor for signal <GND_123_o_GND_123_o_sub_104_OUT> created at line 302.
+    Found 12-bit subtractor for signal <GND_123_o_GND_123_o_sub_115_OUT> created at line 338.
+    Found 11-bit subtractor for signal <GND_123_o_GND_123_o_sub_116_OUT> created at line 338.
+    Found 12-bit subtractor for signal <GND_123_o_GND_123_o_sub_161_OUT> created at line 471.
+    Found 12-bit subtractor for signal <GND_123_o_GND_123_o_sub_197_OUT> created at line 534.
+    Found 11-bit subtractor for signal <GND_123_o_GND_123_o_sub_198_OUT> created at line 534.
+    Found 12-bit subtractor for signal <GND_123_o_GND_123_o_sub_233_OUT> created at line 599.
+    Found 11-bit subtractor for signal <GND_123_o_GND_123_o_sub_234_OUT> created at line 599.
+    Found 12-bit adder for signal <n0478> created at line 287.
+    Found 11-bit adder for signal <n0701> created at line 300.
+    Found 11-bit adder for signal <n0703> created at line 300.
+    Found 16-bit adder for signal <n0560> created at line 302.
+    Found 11-bit adder for signal <n0711> created at line 336.
+    Found 11-bit adder for signal <n0713> created at line 336.
+    Found 16-bit adder for signal <n0566> created at line 338.
+    Found 11-bit adder for signal <n0721> created at line 375.
+    Found 11-bit adder for signal <n0723> created at line 376.
+    Found 11-bit adder for signal <n0725> created at line 390.
+    Found 11-bit adder for signal <n0727> created at line 391.
+    Found 11-bit adder for signal <n0729> created at line 405.
+    Found 11-bit adder for signal <n0731> created at line 406.
+    Found 11-bit adder for signal <n0733> created at line 420.
+    Found 11-bit adder for signal <n0735> created at line 421.
+    Found 11-bit adder for signal <n0737> created at line 435.
+    Found 11-bit adder for signal <n0739> created at line 436.
+    Found 11-bit adder for signal <n0741> created at line 450.
+    Found 11-bit adder for signal <n0743> created at line 451.
+    Found 19-bit adder for signal <n0582> created at line 471.
+    Found 19-bit adder for signal <n0594> created at line 534.
+    Found 21-bit adder for signal <n0606> created at line 599.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_25_OUT<2:0>> created at line 271.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_34_OUT<2:0>> created at line 271.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_36_OUT<2:0>> created at line 272.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_45_OUT<2:0>> created at line 272.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_47_OUT<2:0>> created at line 273.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_56_OUT<2:0>> created at line 273.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_58_OUT<2:0>> created at line 275.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_67_OUT<2:0>> created at line 275.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_69_OUT<2:0>> created at line 276.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_78_OUT<2:0>> created at line 276.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_80_OUT<2:0>> created at line 277.
+    Found 3-bit subtractor for signal <GND_123_o_GND_123_o_sub_89_OUT<2:0>> created at line 277.
+    Found 6x6-bit multiplier for signal <n0756> created at line 287.
+    Found 11x8-bit multiplier for signal <n0797> created at line 471.
+    Found 11x8-bit multiplier for signal <n0800> created at line 534.
+    Found 11x10-bit multiplier for signal <n0803> created at line 599.
+    Found 32x4-bit Read Only RAM for signal <_n0983>
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <end_game_addr_temp_s<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 11-bit comparator greater for signal <hcount_i[10]_GND_123_o_LessThan_1_o> created at line 231
+    Found 10-bit comparator greater for signal <vcount_i[9]_PWR_100_o_LessThan_3_o> created at line 233
+    Found 10-bit comparator greater for signal <posY_p0_s[9]_vcount_s[9]_LessThan_97_o> created at line 300
+    Found 11-bit comparator greater for signal <GND_123_o_BUS_0002_LessThan_99_o> created at line 300
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_100_o> created at line 300
+    Found 11-bit comparator greater for signal <hcount_s[10]_BUS_0003_LessThan_102_o> created at line 300
+    Found 10-bit comparator greater for signal <posY_p1_s[9]_vcount_s[9]_LessThan_109_o> created at line 336
+    Found 11-bit comparator greater for signal <GND_123_o_BUS_0005_LessThan_111_o> created at line 336
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_112_o> created at line 336
+    Found 11-bit comparator greater for signal <hcount_s[10]_BUS_0006_LessThan_114_o> created at line 336
+    Found 10-bit comparator greater for signal <posY_b0_p0_s[9]_vcount_s[9]_LessThan_121_o> created at line 375
+    Found 11-bit comparator greater for signal <GND_123_o_BUS_0008_LessThan_123_o> created at line 375
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_124_o> created at line 376
+    Found 11-bit comparator greater for signal <hcount_s[10]_BUS_0009_LessThan_126_o> created at line 376
+    Found 10-bit comparator greater for signal <posY_b1_p0_s[9]_vcount_s[9]_LessThan_127_o> created at line 390
+    Found 11-bit comparator greater for signal <GND_123_o_BUS_0010_LessThan_129_o> created at line 390
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_130_o> created at line 391
+    Found 11-bit comparator greater for signal <hcount_s[10]_BUS_0011_LessThan_132_o> created at line 391
+    Found 10-bit comparator greater for signal <posY_b2_p0_s[9]_vcount_s[9]_LessThan_133_o> created at line 405
+    Found 11-bit comparator greater for signal <GND_123_o_BUS_0012_LessThan_135_o> created at line 405
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_136_o> created at line 406
+    Found 11-bit comparator greater for signal <hcount_s[10]_BUS_0013_LessThan_138_o> created at line 406
+    Found 10-bit comparator greater for signal <posY_b0_p1_s[9]_vcount_s[9]_LessThan_139_o> created at line 420
+    Found 11-bit comparator greater for signal <GND_123_o_BUS_0014_LessThan_141_o> created at line 420
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_142_o> created at line 421
+    Found 11-bit comparator greater for signal <hcount_s[10]_BUS_0015_LessThan_144_o> created at line 421
+    Found 10-bit comparator greater for signal <posY_b1_p1_s[9]_vcount_s[9]_LessThan_145_o> created at line 435
+    Found 11-bit comparator greater for signal <GND_123_o_BUS_0016_LessThan_147_o> created at line 435
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_148_o> created at line 436
+    Found 11-bit comparator greater for signal <hcount_s[10]_BUS_0017_LessThan_150_o> created at line 436
+    Found 10-bit comparator greater for signal <posY_b2_p1_s[9]_vcount_s[9]_LessThan_151_o> created at line 450
+    Found 11-bit comparator greater for signal <GND_123_o_BUS_0018_LessThan_153_o> created at line 450
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_154_o> created at line 451
+    Found 11-bit comparator greater for signal <hcount_s[10]_BUS_0019_LessThan_156_o> created at line 451
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_157_o> created at line 468
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_158_o> created at line 468
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_168_o> created at line 490
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_169_o> created at line 490
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_172_o> created at line 494
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_175_o> created at line 498
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_178_o> created at line 502
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_181_o> created at line 506
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_184_o> created at line 510
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_187_o> created at line 514
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_190_o> created at line 518
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_193_o> created at line 531
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_194_o> created at line 531
+    Found 10-bit comparator greater for signal <GND_123_o_vcount_s[9]_LessThan_195_o> created at line 532
+    Found 10-bit comparator greater for signal <vcount_s[9]_GND_123_o_LessThan_196_o> created at line 532
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_204_o> created at line 554
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_205_o> created at line 554
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_208_o> created at line 558
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_211_o> created at line 562
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_214_o> created at line 566
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_217_o> created at line 570
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_220_o> created at line 574
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_223_o> created at line 578
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_226_o> created at line 582
+    Found 11-bit comparator greater for signal <GND_123_o_hcount_s[10]_LessThan_229_o> created at line 596
+    Found 11-bit comparator greater for signal <hcount_s[10]_GND_123_o_LessThan_230_o> created at line 596
+    Found 10-bit comparator greater for signal <GND_123_o_vcount_s[9]_LessThan_231_o> created at line 597
+    Found 10-bit comparator greater for signal <vcount_s[9]_GND_123_o_LessThan_232_o> created at line 597
+    Found 4-bit comparator lessequal for signal <n0341> created at line 734
+    Found 4-bit comparator lessequal for signal <n0344> created at line 740
+    Found 4-bit comparator lessequal for signal <n0347> created at line 746
+    Found 4-bit comparator lessequal for signal <n0350> created at line 752
+    Found 4-bit comparator lessequal for signal <n0353> created at line 758
+    Found 4-bit comparator lessequal for signal <n0356> created at line 764
+    Found 4-bit comparator lessequal for signal <n0359> created at line 770
+    Found 4-bit comparator lessequal for signal <n0378> created at line 797
+    Found 4-bit comparator lessequal for signal <n0381> created at line 803
+    Found 4-bit comparator lessequal for signal <n0384> created at line 809
+    Found 4-bit comparator lessequal for signal <n0387> created at line 815
+    Found 4-bit comparator lessequal for signal <n0390> created at line 821
+    Found 4-bit comparator lessequal for signal <n0393> created at line 827
+    Found 4-bit comparator lessequal for signal <n0396> created at line 833
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Multiplier(s).
+	inferred  43 Adder/Subtractor(s).
+	inferred  17 Latch(s).
+	inferred  76 Comparator(s).
+	inferred 150 Multiplexer(s).
+Unit <graphic> synthesized.
+
+Synthesizing Unit <div_11u_6u>.
+    Related source file is "".
+    Found 17-bit adder for signal <GND_124_o_b[5]_add_1_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_124_o_b[5]_add_3_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_124_o_b[5]_add_5_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_124_o_b[5]_add_7_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_124_o_b[5]_add_9_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_124_o_b[5]_add_11_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_b[5]_add_13_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_124_o_add_15_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_124_o_add_17_OUT[10:0]> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_124_o_add_19_OUT[10:0]> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_124_o_add_21_OUT[10:0]> created at line 0.
+    Found 17-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred  91 Multiplexer(s).
+Unit <div_11u_6u> synthesized.
+
+Synthesizing Unit <div_10u_6u>.
+    Related source file is "".
+    Found 16-bit adder for signal <GND_125_o_b[5]_add_1_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_125_o_b[5]_add_3_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_125_o_b[5]_add_5_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_125_o_b[5]_add_7_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_125_o_b[5]_add_9_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_125_o_b[5]_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[5]_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_125_o_add_15_OUT[9:0]> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_125_o_add_17_OUT[9:0]> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_125_o_add_19_OUT[9:0]> created at line 0.
+    Found 16-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred  73 Multiplexer(s).
+Unit <div_10u_6u> synthesized.
+
+Synthesizing Unit <mod_11u_6u>.
+    Related source file is "".
+    Found 17-bit adder for signal <GND_126_o_b[5]_add_1_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_126_o_b[5]_add_3_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_126_o_b[5]_add_5_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_126_o_b[5]_add_7_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_126_o_b[5]_add_9_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_126_o_b[5]_add_11_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_b[5]_add_13_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_126_o_add_15_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_126_o_add_17_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_126_o_add_19_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_126_o_add_21_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_126_o_add_23_OUT> created at line 0.
+    Found 17-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred 122 Multiplexer(s).
+Unit <mod_11u_6u> synthesized.
+
+Synthesizing Unit <mod_10u_6u>.
+    Related source file is "".
+    Found 16-bit adder for signal <GND_127_o_b[5]_add_1_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_127_o_b[5]_add_3_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_127_o_b[5]_add_5_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_127_o_b[5]_add_7_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_127_o_b[5]_add_9_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_127_o_b[5]_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[5]_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_127_o_add_15_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_127_o_add_17_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_127_o_add_19_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_127_o_add_21_OUT> created at line 0.
+    Found 16-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred 101 Multiplexer(s).
+Unit <mod_10u_6u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x4-bit single-port Read Only RAM                    : 1
+# Multipliers                                          : 30
+ 11x10-bit multiplier                                  : 1
+ 11x8-bit multiplier                                   : 2
+ 6x6-bit multiplier                                    : 1
+ 8x8-bit multiplier                                    : 8
+ 9x8-bit multiplier                                    : 10
+ 9x9-bit multiplier                                    : 8
+# Adders/Subtractors                                   : 223
+ 10-bit adder                                          : 12
+ 11-bit adder                                          : 30
+ 11-bit subtractor                                     : 4
+ 12-bit adder                                          : 5
+ 12-bit subtractor                                     : 5
+ 13-bit adder                                          : 4
+ 14-bit adder                                          : 4
+ 15-bit adder                                          : 10
+ 16-bit adder                                          : 14
+ 17-bit adder                                          : 24
+ 18-bit adder                                          : 12
+ 19-bit adder                                          : 2
+ 21-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 3-bit subtractor                                      : 12
+ 4-bit adder                                           : 2
+ 6-bit subtractor                                      : 2
+ 8-bit adder                                           : 28
+ 9-bit adder                                           : 32
+ 9-bit subtractor                                      : 16
+# Registers                                            : 86
+ 1-bit register                                        : 32
+ 10-bit register                                       : 3
+ 11-bit register                                       : 1
+ 15-bit register                                       : 6
+ 17-bit register                                       : 2
+ 2-bit register                                        : 8
+ 23-bit register                                       : 1
+ 24-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 2
+ 40-bit register                                       : 4
+ 6-bit register                                        : 2
+ 8-bit register                                        : 22
+# Latches                                              : 77
+ 1-bit latch                                           : 77
+# Comparators                                          : 184
+ 10-bit comparator greater                             : 15
+ 10-bit comparator lessequal                           : 11
+ 11-bit comparator greater                             : 59
+ 11-bit comparator lessequal                           : 15
+ 12-bit comparator lessequal                           : 4
+ 13-bit comparator lessequal                           : 4
+ 14-bit comparator lessequal                           : 4
+ 15-bit comparator lessequal                           : 4
+ 16-bit comparator lessequal                           : 4
+ 17-bit comparator greater                             : 2
+ 17-bit comparator lessequal                           : 2
+ 23-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 2
+ 4-bit comparator lessequal                            : 14
+ 6-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 28
+ 9-bit comparator greater                              : 12
+# Multiplexers                                         : 985
+ 1-bit 2-to-1 multiplexer                              : 707
+ 1-bit 4-to-1 multiplexer                              : 12
+ 10-bit 2-to-1 multiplexer                             : 9
+ 11-bit 2-to-1 multiplexer                             : 7
+ 15-bit 2-to-1 multiplexer                             : 24
+ 15-bit 4-to-1 multiplexer                             : 6
+ 17-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 7
+ 23-bit 2-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 2
+ 40-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 191
+ 8-bit 4-to-1 multiplexer                              : 6
+# FSMs                                                 : 7
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/mur_sprite_ram.ngc>.
+Reading core <ipcore_dir/sol_sprite_ram.ngc>.
+Reading core <ipcore_dir/grudu_up_sprite_ram.ngc>.
+Reading core <ipcore_dir/grudu_left_sprite_ram.ngc>.
+Reading core <ipcore_dir/grudu_down_sprite_ram.ngc>.
+Reading core <ipcore_dir/grudu_right_sprite_ram.ngc>.
+Reading core <ipcore_dir/nestor_up_sprite_ram.ngc>.
+Reading core <ipcore_dir/nestor_left_sprite_ram.ngc>.
+Reading core <ipcore_dir/nestor_down_sprite_ram.ngc>.
+Reading core <ipcore_dir/nestor_right_sprite_ram.ngc>.
+Reading core <ipcore_dir/nestor_text_ram.ngc>.
+Reading core <ipcore_dir/grudu_text_ram.ngc>.
+Reading core <ipcore_dir/end_game_screen0_ram.ngc>.
+Reading core <ipcore_dir/end_game_screen1_ram.ngc>.
+Reading core <ipcore_dir/collision_map_ram.ngc>.
+Loading core <mur_sprite_ram> for timing and area information for instance <mur_ram_descr>.
+Loading core <sol_sprite_ram> for timing and area information for instance <sol_ram_descr>.
+Loading core <grudu_up_sprite_ram> for timing and area information for instance <grudu_up_ram_descr>.
+Loading core <grudu_left_sprite_ram> for timing and area information for instance <grudu_left_ram_descr>.
+Loading core <grudu_down_sprite_ram> for timing and area information for instance <grudu_down_ram_descr>.
+Loading core <grudu_right_sprite_ram> for timing and area information for instance <grudu_right_ram_descr>.
+Loading core <nestor_up_sprite_ram> for timing and area information for instance <nestor_up_ram_descr>.
+Loading core <nestor_left_sprite_ram> for timing and area information for instance <nestor_left_ram_descr>.
+Loading core <nestor_down_sprite_ram> for timing and area information for instance <nestor_down_ram_descr>.
+Loading core <nestor_right_sprite_ram> for timing and area information for instance <nestor_right_ram_descr>.
+Loading core <nestor_text_ram> for timing and area information for instance <nestor_text_ram_descr>.
+Loading core <grudu_text_ram> for timing and area information for instance <grudu_text_ram_descr>.
+Loading core <end_game_screen0_ram> for timing and area information for instance <end_game_screen0_descr>.
+Loading core <end_game_screen1_ram> for timing and area information for instance <end_game_screen1_descr>.
+Loading core <collision_map_ram> for timing and area information for instance <collision_map_ram_player0>.
+Loading core <collision_map_ram> for timing and area information for instance <collision_map_ram_player1>.
+Loading core <collision_map_ram> for timing and area information for instance <collision_map_ram_bullet0>.
+Loading core <collision_map_ram> for timing and area information for instance <collision_map_ram_bullet1>.
+Loading core <collision_map_ram> for timing and area information for instance <collision_map_ram_bullet2>.
+WARNING:Xst:2677 - Node <DOUT_0> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_2> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_3> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_4> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_5> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_6> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_7> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_10> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_11> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_12> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_13> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_14> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_15> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_26> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_27> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_28> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_29> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_30> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_31> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_0> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_2> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_3> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_4> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_5> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_6> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_7> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_10> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_11> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_12> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_13> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_14> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_15> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_26> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_27> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_28> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_29> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_30> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_31> of sequential type is unconnected in block <SPI_Ctrl>.
+
+Synthesizing (advanced) Unit <Bullet>.
+	Multiplier <Mmult_n0213> in block <Bullet> and adder/subtractor <Madd_n0145_Madd> in block <Bullet> are combined into a MAC<Maddsub_n0213>.
+	Multiplier <Mmult_n0205> in block <Bullet> and adder/subtractor <Madd_n0140_Madd> in block <Bullet> are combined into a MAC<Maddsub_n0205>.
+	Adder/Subtractor <Madd_n0194> in block <Bullet> and  <Maddsub_n0213> in block <Bullet> are combined into a MAC with pre-adder <Maddsub_n02131>.
+Unit <Bullet> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ClkDiv_5Hz>.
+The following registers are absorbed into counter <clkCount>: 1 register on signal <clkCount>.
+Unit <ClkDiv_5Hz> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ClkDiv_66_67kHz>.
+The following registers are absorbed into counter <clkCount>: 1 register on signal <clkCount>.
+Unit <ClkDiv_66_67kHz> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA>.
+The following registers are absorbed into counter <hcounter_s>: 1 register on signal <hcounter_s>.
+The following registers are absorbed into counter <vcounter_s>: 1 register on signal <vcounter_s>.
+Unit <VGA> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into counter <blink_s>: 1 register on signal <blink_s>.
+Unit <counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <graphic>.
+	Multiplier <Mmult_n0756> in block <graphic> and adder/subtractor <Madd_n0478_Madd> in block <graphic> are combined into a MAC<Maddsub_n0756>.
+	Multiplier <Mmult_n0797> in block <graphic> and adder/subtractor <Madd_n0582_Madd> in block <graphic> are combined into a MAC<Maddsub_n0797>.
+	Multiplier <Mmult_n0800> in block <graphic> and adder/subtractor <Madd_n0594_Madd> in block <graphic> are combined into a MAC<Maddsub_n0800>.
+	Multiplier <Mmult_n0803> in block <graphic> and adder/subtractor <Madd_n0606_Madd> in block <graphic> are combined into a MAC<Maddsub_n0803>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0983> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0490>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <graphic> synthesized (advanced).
+
+Synthesizing (advanced) Unit <player0>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+	Adder/Subtractor <Madd_n0189> in block <player0> and  <Mmult_n0219> in block <player0> are combined into a MULT with pre-adder <Mmult_n02191>.
+	Adder/Subtractor <Madd_n0193> in block <player0> and  <Mmult_n0234> in block <player0> are combined into a MULT with pre-adder <Mmult_n02341>.
+Unit <player0> synthesized (advanced).
+
+Synthesizing (advanced) Unit <player1>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+	Adder/Subtractor <Madd_n0189> in block <player1> and  <Mmult_n0222> in block <player1> are combined into a MULT with pre-adder <Mmult_n02221>.
+	Adder/Subtractor <Madd_n0193> in block <player1> and  <Mmult_n0237> in block <player1> are combined into a MULT with pre-adder <Mmult_n02371>.
+Unit <player1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spiCtrl>.
+The following registers are absorbed into counter <byteCnt>: 1 register on signal <byteCnt>.
+Unit <spiCtrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spiMode0>.
+The following registers are absorbed into counter <bitCount>: 1 register on signal <bitCount>.
+Unit <spiMode0> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x4-bit single-port distributed Read Only RAM        : 1
+# MACs                                                 : 20
+ 11x10-to-17-bit MAC                                   : 1
+ 11x8-to-11-bit MAC                                    : 2
+ 6x6-to-11-bit MAC                                     : 1
+ 8x9-to-15-bit MAC with pre-adder                      : 6
+ 8x9-to-17-bit Mult with pre-adder                     : 4
+ 9x9-to-15-bit MAC                                     : 6
+# Multipliers                                          : 10
+ 8x8-bit multiplier                                    : 8
+ 9x9-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 185
+ 10-bit adder                                          : 22
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 38
+ 11-bit subtractor                                     : 4
+ 12-bit subtractor                                     : 1
+ 15-bit adder                                          : 34
+ 3-bit subtractor                                      : 12
+ 5-bit subtractor                                      : 2
+ 6-bit adder                                           : 2
+ 6-bit subtractor                                      : 2
+ 8-bit adder                                           : 28
+ 9-bit adder                                           : 22
+ 9-bit subtractor                                      : 16
+# Counters                                             : 12
+ 10-bit up counter                                     : 3
+ 11-bit up counter                                     : 1
+ 17-bit up counter                                     : 2
+ 23-bit up counter                                     : 1
+ 24-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 486
+ Flip-Flops                                            : 486
+# Comparators                                          : 184
+ 10-bit comparator greater                             : 15
+ 10-bit comparator lessequal                           : 11
+ 11-bit comparator greater                             : 59
+ 11-bit comparator lessequal                           : 15
+ 12-bit comparator lessequal                           : 4
+ 13-bit comparator lessequal                           : 4
+ 14-bit comparator lessequal                           : 4
+ 15-bit comparator lessequal                           : 4
+ 16-bit comparator lessequal                           : 4
+ 17-bit comparator greater                             : 2
+ 17-bit comparator lessequal                           : 2
+ 23-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 2
+ 4-bit comparator lessequal                            : 14
+ 6-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 28
+ 9-bit comparator greater                              : 12
+# Multiplexers                                         : 972
+ 1-bit 2-to-1 multiplexer                              : 706
+ 1-bit 4-to-1 multiplexer                              : 12
+ 10-bit 2-to-1 multiplexer                             : 6
+ 11-bit 2-to-1 multiplexer                             : 6
+ 15-bit 2-to-1 multiplexer                             : 24
+ 15-bit 4-to-1 multiplexer                             : 6
+ 2-bit 2-to-1 multiplexer                              : 7
+ 3-bit 2-to-1 multiplexer                              : 2
+ 40-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 191
+ 8-bit 4-to-1 multiplexer                              : 6
+# FSMs                                                 : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_3> on signal <etat_present[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ game        | 00
+ end_game_p0 | 11
+ end_game_p1 | 01
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <spi_joystick_p1/SPI_Ctrl/FSM_0> on signal <STATE[1:3]> with user encoding.
+Optimizing FSM <spi_joystick_p0/SPI_Ctrl/FSM_0> on signal <STATE[1:3]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ stidle  | 000
+ stinit  | 001
+ stwait  | 010
+ stcheck | 011
+ stdone  | 100
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <spi_joystick_p1/SPI_Int/FSM_1> on signal <STATE[1:2]> with user encoding.
+Optimizing FSM <spi_joystick_p0/SPI_Int/FSM_1> on signal <STATE[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ init  | 01
+ rxtx  | 10
+ done  | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <bullet_ctrl_p0/FSM_2> on signal <etat_present[1:3]> with one-hot encoding.
+Optimizing FSM <bullet_ctrl_p1/FSM_2> on signal <etat_present[1:3]> with one-hot encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ depart    | 001
+ impulsion | 010
+ attendre  | 100
+-----------------------
+INFO:Xst:1901 - Instance DCM_descr/pll_base_inst in unit DCM_descr/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <TOP_LEVEL> ...
+
+Optimizing unit <spiCtrl> ...
+
+Optimizing unit <spiMode0> ...
+
+Optimizing unit <VGA> ...
+
+Optimizing unit <player0> ...
+
+Optimizing unit <player1> ...
+
+Optimizing unit <bullet_ctrl> ...
+
+Optimizing unit <graphic> ...
+WARNING:Xst:1293 - FF/Latch <spi_joystick_p1/SPI_Int/wSR_0> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Int/wSR_1> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Int/wSR_2> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Int/wSR_3> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Int/wSR_4> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Int/wSR_5> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Int/wSR_6> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Int/wSR_7> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Int/wSR_0> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Int/wSR_1> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Int/wSR_2> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Int/wSR_3> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Int/wSR_4> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Int/wSR_5> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Int/wSR_6> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Int/wSR_7> has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Ctrl/sndData_0> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Ctrl/sndData_1> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Ctrl/sndData_2> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Ctrl/sndData_3> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Ctrl/sndData_4> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Ctrl/sndData_5> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Ctrl/sndData_6> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p1/SPI_Ctrl/sndData_7> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Ctrl/sndData_0> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Ctrl/sndData_1> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Ctrl/sndData_2> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Ctrl/sndData_3> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Ctrl/sndData_4> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Ctrl/sndData_5> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Ctrl/sndData_6> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_joystick_p0/SPI_Ctrl/sndData_7> (without init value) has a constant value of 0 in block <TOP_LEVEL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_31> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_30> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_29> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_28> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_27> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_26> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_15> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_14> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_13> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_12> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_11> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_10> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_7> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_6> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_5> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_4> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_3> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_2> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p0/SPI_Ctrl/DOUT_0> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_31> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_30> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_29> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_28> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_27> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_26> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_15> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_14> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_13> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_12> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_11> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_10> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_7> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_6> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_5> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_4> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_3> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_2> of sequential type is unconnected in block <TOP_LEVEL>.
+WARNING:Xst:2677 - Node <spi_joystick_p1/SPI_Ctrl/DOUT_0> of sequential type is unconnected in block <TOP_LEVEL>.
+INFO:Xst:2261 - The FF/Latch <p0/count_10> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_10> 
+INFO:Xst:2261 - The FF/Latch <p0/count_11> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_11> 
+INFO:Xst:2261 - The FF/Latch <p0/count_12> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_12> 
+INFO:Xst:2261 - The FF/Latch <p0/count_13> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_13> 
+INFO:Xst:2261 - The FF/Latch <p0/count_14> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_14> 
+INFO:Xst:2261 - The FF/Latch <p0/count_15> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_15> 
+INFO:Xst:2261 - The FF/Latch <p0/count_16> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_16> 
+INFO:Xst:2261 - The FF/Latch <p0/count_0> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_0> 
+INFO:Xst:2261 - The FF/Latch <p0/count_1> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_1> 
+INFO:Xst:2261 - The FF/Latch <p0/count_2> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_2> 
+INFO:Xst:2261 - The FF/Latch <p0/count_3> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_3> 
+INFO:Xst:2261 - The FF/Latch <p0/count_4> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_4> 
+INFO:Xst:2261 - The FF/Latch <p0/count_5> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_5> 
+INFO:Xst:2261 - The FF/Latch <p0/count_6> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_6> 
+INFO:Xst:2261 - The FF/Latch <p0/count_7> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_7> 
+INFO:Xst:2261 - The FF/Latch <p0/count_8> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_8> 
+INFO:Xst:2261 - The FF/Latch <p0/count_9> in Unit <TOP_LEVEL> is equivalent to the following FF/Latch, which will be removed : <p1/count_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 43.
+FlipFlop VGA_controller/vcounter_s_5 has been replicated 1 time(s)
+FlipFlop VGA_controller/vcounter_s_6 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 553
+ Flip-Flops                                            : 553
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TOP_LEVEL.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4366
+#      GND                         : 20
+#      INV                         : 42
+#      LUT1                        : 227
+#      LUT2                        : 310
+#      LUT3                        : 429
+#      LUT4                        : 610
+#      LUT5                        : 483
+#      LUT6                        : 783
+#      MUXCY                       : 743
+#      MUXF7                       : 10
+#      VCC                         : 20
+#      XORCY                       : 689
+# FlipFlops/Latches                : 646
+#      FDC                         : 99
+#      FDC_1                       : 16
+#      FDCE                        : 284
+#      FDCE_1                      : 122
+#      FDE                         : 28
+#      FDP                         : 2
+#      FDP_1                       : 2
+#      FDPE                        : 16
+#      LDC                         : 60
+#      LDE                         : 17
+# RAMS                             : 32
+#      RAMB16BWER                  : 22
+#      RAMB8BWER                   : 10
+# Clock Buffers                    : 8
+#      BUFG                        : 8
+# IO Buffers                       : 21
+#      IBUF                        : 4
+#      IBUFG                       : 1
+#      OBUF                        : 16
+# DSPs                             : 21
+#      DSP48A1                     : 21
+# Others                           : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             646  out of  18224     3%  
+ Number of Slice LUTs:                 2884  out of   9112    31%  
+    Number used as Logic:              2884  out of   9112    31%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2998
+   Number with an unused Flip Flop:    2352  out of   2998    78%  
+   Number with an unused LUT:           114  out of   2998     3%  
+   Number of fully used LUT-FF pairs:   532  out of   2998    17%  
+   Number of unique control sets:        79
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    232     9%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               27  out of     32    84%  
+    Number using Block RAM only:         27
+ Number of BUFG/BUFGCTRLs:                8  out of     16    50%  
+ Number of DSP48A1s:                     21  out of     32    65%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                         | Clock buffer(FF name)                                                                                                                           | Load  |
+---------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+DCM_descr/pll_base_inst/CLKOUT2                                      | BUFG                                                                                                                                            | 47    |
+DCM_descr/pll_base_inst/CLKOUT1                                      | BUFG                                                                                                                                            | 310   |
+spi_joystick_p0/SerialClock/CLKOUT                                   | BUFG                                                                                                                                            | 85    |
+spi_joystick_p1/SerialClock/CLKOUT                                   | BUFG                                                                                                                                            | 85    |
+DCM_descr/pll_base_inst/CLKOUT0                                      | BUFG                                                                                                                                            | 74    |
+p0/mov_p0_i[3]_GND_57_o_Mux_37_o(p0/mov_p0_i[3]_GND_57_o_Mux_37_o1:O)| BUFG(*)(p0/map_addr_temp0_s_14)                                                                                                                 | 30    |
+p1/mov_p1_i[3]_GND_89_o_Mux_37_o(p1/mov_p1_i[3]_GND_89_o_Mux_37_o1:O)| NONE(*)(p1/map_addr_temp0_s_14)                                                                                                                 | 30    |
+MOSI_p1_o_OBUF                                                       | NONE(Graphic1/Msub_GND_123_o_GND_123_o_sub_197_OUT_Madd1)                                                                                       | 2     |
+CTRL/etat_present_FSM_FFd2                                           | NONE(Graphic1/end_game_addr_temp_s_16)                                                                                                          | 17    |
+mur_ram_descr/N1                                                     | NONE(mur_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)         | 1     |
+sol_ram_descr/N1                                                     | NONE(sol_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)         | 1     |
+grudu_up_ram_descr/N1                                                | NONE(grudu_up_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)     | 1     |
+grudu_left_ram_descr/N1                                              | NONE(grudu_left_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)   | 1     |
+grudu_down_ram_descr/N1                                              | NONE(grudu_down_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)   | 1     |
+grudu_right_ram_descr/N1                                             | NONE(grudu_right_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)  | 1     |
+nestor_up_ram_descr/N1                                               | NONE(nestor_up_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)    | 1     |
+nestor_left_ram_descr/N1                                             | NONE(nestor_left_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)  | 1     |
+nestor_down_ram_descr/N1                                             | NONE(nestor_down_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)  | 1     |
+nestor_right_ram_descr/N1                                            | NONE(nestor_right_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram) | 1     |
+nestor_text_ram_descr/N1                                             | NONE(nestor_text_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)  | 1     |
+grudu_text_ram_descr/N1                                              | NONE(grudu_text_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)   | 1     |
+end_game_screen0_descr/N1                                            | NONE(end_game_screen0_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 5     |
+end_game_screen1_descr/N1                                            | NONE(end_game_screen1_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 5     |
+---------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 16.674ns (Maximum Frequency: 59.974MHz)
+   Minimum input arrival time before clock: 6.500ns
+   Maximum output required time after clock: 22.593ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DCM_descr/pll_base_inst/CLKOUT2'
+  Clock period: 5.098ns (frequency: 196.155MHz)
+  Total number of paths / destination ports: 2333 / 50
+-------------------------------------------------------------------------
+Delay:               5.098ns (Levels of Logic = 13)
+  Source:            spi_joystick_p1/SerialClock/clkCount_2 (FF)
+  Destination:       spi_joystick_p1/SerialClock/clkCount_9 (FF)
+  Source Clock:      DCM_descr/pll_base_inst/CLKOUT2 rising
+  Destination Clock: DCM_descr/pll_base_inst/CLKOUT2 rising
+
+  Data Path: spi_joystick_p1/SerialClock/clkCount_2 to spi_joystick_p1/SerialClock/clkCount_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   1.156  spi_joystick_p1/SerialClock/clkCount_2 (spi_joystick_p1/SerialClock/clkCount_2)
+     LUT5:I0->O            2   0.254   0.726  spi_joystick_p1/SerialClock/clkCount[9]_PWR_13_o_equal_1_o<9>_SW0 (N77)
+     LUT6:I5->O           11   0.254   1.267  spi_joystick_p1/SerialClock/clkCount[9]_PWR_13_o_equal_1_o<9> (spi_joystick_p1/SerialClock/clkCount[9]_PWR_13_o_equal_1_o)
+     LUT3:I0->O            1   0.235   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_lut<0> (spi_joystick_p1/SerialClock/Mcount_clkCount_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_cy<0> (spi_joystick_p1/SerialClock/Mcount_clkCount_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_cy<1> (spi_joystick_p1/SerialClock/Mcount_clkCount_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_cy<2> (spi_joystick_p1/SerialClock/Mcount_clkCount_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_cy<3> (spi_joystick_p1/SerialClock/Mcount_clkCount_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_cy<4> (spi_joystick_p1/SerialClock/Mcount_clkCount_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_cy<5> (spi_joystick_p1/SerialClock/Mcount_clkCount_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_cy<6> (spi_joystick_p1/SerialClock/Mcount_clkCount_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_cy<7> (spi_joystick_p1/SerialClock/Mcount_clkCount_cy<7>)
+     MUXCY:CI->O           0   0.023   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_cy<8> (spi_joystick_p1/SerialClock/Mcount_clkCount_cy<8>)
+     XORCY:CI->O           1   0.206   0.000  spi_joystick_p1/SerialClock/Mcount_clkCount_xor<9> (spi_joystick_p1/SerialClock/Mcount_clkCount9)
+     FDC:D                     0.074          spi_joystick_p1/SerialClock/clkCount_9
+    ----------------------------------------
+    Total                      5.098ns (1.949ns logic, 3.149ns route)
+                                       (38.2% logic, 61.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DCM_descr/pll_base_inst/CLKOUT1'
+  Clock period: 11.640ns (frequency: 85.909MHz)
+  Total number of paths / destination ports: 37022 / 583
+-------------------------------------------------------------------------
+Delay:               11.640ns (Levels of Logic = 8)
+  Source:            p0/posX_p0_s_4 (FF)
+  Destination:       Bullet0_p1/posX_s_7 (FF)
+  Source Clock:      DCM_descr/pll_base_inst/CLKOUT1 rising
+  Destination Clock: DCM_descr/pll_base_inst/CLKOUT1 rising
+
+  Data Path: p0/posX_p0_s_4 to Bullet0_p1/posX_s_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            70   0.525   2.204  p0/posX_p0_s_4 (p0/posX_p0_s_4)
+     LUT4:I1->O            1   0.235   1.137  Bullet0_p1/GND_119_o_BUS_0016_LessThan_65_o151 (Bullet0_p1/GND_119_o_BUS_0016_LessThan_65_o15)
+     LUT6:I0->O            1   0.254   0.682  Bullet0_p1/GND_119_o_BUS_0016_LessThan_65_o14 (Bullet0_p1/GND_119_o_BUS_0016_LessThan_65_o13)
+     LUT2:I1->O            2   0.254   0.834  Bullet0_p1/GND_119_o_BUS_0016_LessThan_65_o15 (Bullet0_p1/GND_119_o_BUS_0016_LessThan_65_o2)
+     LUT6:I4->O            2   0.250   0.726  Bullet0_p1/posY_adv_s[7]_posX_adv_s[7]_AND_262_o3 (Bullet0_p1/posY_adv_s[7]_posX_adv_s[7]_AND_262_o3)
+     LUT6:I5->O            1   0.254   0.682  Bullet0_p1/posY_adv_s[7]_posX_adv_s[7]_AND_262_o7_SW0 (N553)
+     LUT6:I5->O            2   0.254   0.726  Bullet0_p1/posY_adv_s[7]_posX_adv_s[7]_AND_262_o7 (Bullet0_p1/posY_adv_s[7]_posX_adv_s[7]_AND_262_o)
+     LUT3:I2->O            3   0.254   0.874  Bullet0_p1/Mmux_shot_s_GND_119_o_MUX_220_o2111 (Bullet0_p1/Mmux_shot_s_GND_119_o_MUX_220_o211)
+     LUT6:I4->O            8   0.250   0.943  Bullet0_p1/_n0295_inv1 (Bullet0_p1/_n0295_inv)
+     FDCE:CE                   0.302          Bullet0_p1/posY_s_0
+    ----------------------------------------
+    Total                     11.640ns (2.832ns logic, 8.808ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'spi_joystick_p0/SerialClock/CLKOUT'
+  Clock period: 6.208ns (frequency: 161.082MHz)
+  Total number of paths / destination ports: 349 / 156
+-------------------------------------------------------------------------
+Delay:               3.104ns (Levels of Logic = 1)
+  Source:            spi_joystick_p0/SPI_Int/STATE_FSM_FFd1 (FF)
+  Destination:       spi_joystick_p0/SPI_Int/rSR_7 (FF)
+  Source Clock:      spi_joystick_p0/SerialClock/CLKOUT falling
+  Destination Clock: spi_joystick_p0/SerialClock/CLKOUT rising
+
+  Data Path: spi_joystick_p0/SPI_Int/STATE_FSM_FFd1 to spi_joystick_p0/SPI_Int/rSR_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            9   0.525   1.084  spi_joystick_p0/SPI_Int/STATE_FSM_FFd1 (spi_joystick_p0/SPI_Int/STATE_FSM_FFd1)
+     LUT3:I1->O            8   0.250   0.943  spi_joystick_p0/SPI_Int/_n0060_inv1 (spi_joystick_p0/SPI_Int/_n0060_inv)
+     FDCE:CE                   0.302          spi_joystick_p0/SPI_Int/rSR_0
+    ----------------------------------------
+    Total                      3.104ns (1.077ns logic, 2.027ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'spi_joystick_p1/SerialClock/CLKOUT'
+  Clock period: 6.208ns (frequency: 161.082MHz)
+  Total number of paths / destination ports: 349 / 156
+-------------------------------------------------------------------------
+Delay:               3.104ns (Levels of Logic = 1)
+  Source:            spi_joystick_p1/SPI_Int/STATE_FSM_FFd1 (FF)
+  Destination:       spi_joystick_p1/SPI_Int/rSR_7 (FF)
+  Source Clock:      spi_joystick_p1/SerialClock/CLKOUT falling
+  Destination Clock: spi_joystick_p1/SerialClock/CLKOUT rising
+
+  Data Path: spi_joystick_p1/SPI_Int/STATE_FSM_FFd1 to spi_joystick_p1/SPI_Int/rSR_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            9   0.525   1.084  spi_joystick_p1/SPI_Int/STATE_FSM_FFd1 (spi_joystick_p1/SPI_Int/STATE_FSM_FFd1)
+     LUT3:I1->O            8   0.250   0.943  spi_joystick_p1/SPI_Int/_n0060_inv1 (spi_joystick_p1/SPI_Int/_n0060_inv)
+     FDCE:CE                   0.302          spi_joystick_p1/SPI_Int/rSR_0
+    ----------------------------------------
+    Total                      3.104ns (1.077ns logic, 2.027ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DCM_descr/pll_base_inst/CLKOUT0'
+  Clock period: 16.674ns (frequency: 59.974MHz)
+  Total number of paths / destination ports: 122434 / 162
+-------------------------------------------------------------------------
+Delay:               16.674ns (Levels of Logic = 6)
+  Source:            VGA_controller/hcounter_s_7 (FF)
+  Destination:       nestor_text_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram (RAM)
+  Source Clock:      DCM_descr/pll_base_inst/CLKOUT0 rising
+  Destination Clock: DCM_descr/pll_base_inst/CLKOUT0 rising
+
+  Data Path: VGA_controller/hcounter_s_7 to nestor_text_ram_descr/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             31   0.525   1.958  VGA_controller/hcounter_s_7 (VGA_controller/hcounter_s_7)
+     LUT6:I0->O           41   0.254   1.671  Graphic1/Mmux_hcount_s131 (Graphic1/Mmux_hcount_s13)
+     LUT2:I1->O           54   0.254   1.851  Graphic1/Mmux_hcount_s61 (Graphic1/hcount_s<4>)
+     DSP48A1:C4->PCOUT47    1   3.149   0.000  Graphic1/Msub_GND_123_o_GND_123_o_sub_161_OUT_Madd1 (Graphic1/Msub_GND_123_o_GND_123_o_sub_161_OUT_Madd1_PCOUT_to_Maddsub_n0797_PCIN_47)
+     DSP48A1:PCIN47->P10    1   2.645   0.682  Graphic1/Maddsub_n0797 (Graphic1/n0582<10>)
+     LUT6:I5->O            1   0.254   0.681  Graphic1/Mmux_nestor_text_addr_temp_s21 (addr_nestor_text_ram_s<10>)
+     begin scope: 'nestor_text_ram_descr:addra<10>'
+     RAMB8BWER:ADDRAWRADDR12        0.400          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram
+    ----------------------------------------
+    Total                     16.674ns (9.831ns logic, 6.843ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DCM_descr/pll_base_inst/CLKOUT2'
+  Total number of paths / destination ports: 47 / 47
+-------------------------------------------------------------------------
+Offset:              4.298ns (Levels of Logic = 1)
+  Source:            rst_i (PAD)
+  Destination:       spi_joystick_p0/SerialClock/CLKOUT (FF)
+  Destination Clock: DCM_descr/pll_base_inst/CLKOUT2 rising
+
+  Data Path: rst_i to spi_joystick_p0/SerialClock/CLKOUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           697   1.328   2.511  rst_i_IBUF (rst_i_IBUF)
+     FDCE:CLR                  0.459          spi_joystick_p0/SerialClock/CLKOUT
+    ----------------------------------------
+    Total                      4.298ns (1.787ns logic, 2.511ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DCM_descr/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 312 / 312
+-------------------------------------------------------------------------
+Offset:              5.225ns (Levels of Logic = 2)
+  Source:            rst_i (PAD)
+  Destination:       Bullet2_p1/orient_bullet_s_1 (FF)
+  Destination Clock: DCM_descr/pll_base_inst/CLKOUT1 rising
+
+  Data Path: rst_i to Bullet2_p1/orient_bullet_s_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           697   1.328   2.620  rst_i_IBUF (rst_i_IBUF)
+     LUT3:I1->O            2   0.250   0.725  Bullet2_p1/_n0358_inv1 (Bullet2_p1/_n0358_inv)
+     FDE:CE                    0.302          Bullet2_p1/orient_bullet_s_0
+    ----------------------------------------
+    Total                      5.225ns (1.880ns logic, 3.345ns route)
+                                       (36.0% logic, 64.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'spi_joystick_p0/SerialClock/CLKOUT'
+  Total number of paths / destination ports: 86 / 86
+-------------------------------------------------------------------------
+Offset:              4.298ns (Levels of Logic = 1)
+  Source:            rst_i (PAD)
+  Destination:       spi_joystick_p0/SPI_Ctrl/STATE_FSM_FFd1 (FF)
+  Destination Clock: spi_joystick_p0/SerialClock/CLKOUT falling
+
+  Data Path: rst_i to spi_joystick_p0/SPI_Ctrl/STATE_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           697   1.328   2.511  rst_i_IBUF (rst_i_IBUF)
+     FDC_1:CLR                 0.459          spi_joystick_p0/SPI_Ctrl/getByte
+    ----------------------------------------
+    Total                      4.298ns (1.787ns logic, 2.511ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'spi_joystick_p1/SerialClock/CLKOUT'
+  Total number of paths / destination ports: 86 / 86
+-------------------------------------------------------------------------
+Offset:              4.298ns (Levels of Logic = 1)
+  Source:            rst_i (PAD)
+  Destination:       spi_joystick_p1/SPI_Ctrl/STATE_FSM_FFd1 (FF)
+  Destination Clock: spi_joystick_p1/SerialClock/CLKOUT falling
+
+  Data Path: rst_i to spi_joystick_p1/SPI_Ctrl/STATE_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           697   1.328   2.511  rst_i_IBUF (rst_i_IBUF)
+     FDC_1:CLR                 0.459          spi_joystick_p1/SPI_Ctrl/getByte
+    ----------------------------------------
+    Total                      4.298ns (1.787ns logic, 2.511ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DCM_descr/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 212 / 212
+-------------------------------------------------------------------------
+Offset:              6.500ns (Levels of Logic = 4)
+  Source:            rst_i (PAD)
+  Destination:       collision_map_ram_bullet2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
+  Destination Clock: DCM_descr/pll_base_inst/CLKOUT0 rising
+
+  Data Path: rst_i to collision_map_ram_bullet2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           697   1.328   2.967  rst_i_IBUF (rst_i_IBUF)
+     LUT6:I0->O            3   0.254   0.765  Bullet2_p1/Mmux_map_addr_temp_s6 (addr_collision_map_ram_b2_p1_s<14>)
+     begin scope: 'collision_map_ram_bullet2:addrb<14>'
+     INV:I->O              1   0.255   0.681  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/out21_INV_0 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.ram_enb)
+     RAMB16BWER:ENB            0.250          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
+    ----------------------------------------
+    Total                      6.500ns (2.087ns logic, 4.413ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'p0/mov_p0_i[3]_GND_57_o_Mux_37_o'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              4.298ns (Levels of Logic = 1)
+  Source:            rst_i (PAD)
+  Destination:       p0/map_addr_temp0_s_14 (LATCH)
+  Destination Clock: p0/mov_p0_i[3]_GND_57_o_Mux_37_o falling
+
+  Data Path: rst_i to p0/map_addr_temp0_s_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           697   1.328   2.511  rst_i_IBUF (rst_i_IBUF)
+     LDC:CLR                   0.459          p0/map_addr_temp0_s_13
+    ----------------------------------------
+    Total                      4.298ns (1.787ns logic, 2.511ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'p1/mov_p1_i[3]_GND_89_o_Mux_37_o'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              4.298ns (Levels of Logic = 1)
+  Source:            rst_i (PAD)
+  Destination:       p1/map_addr_temp0_s_14 (LATCH)
+  Destination Clock: p1/mov_p1_i[3]_GND_89_o_Mux_37_o falling
+
+  Data Path: rst_i to p1/map_addr_temp0_s_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           697   1.328   2.511  rst_i_IBUF (rst_i_IBUF)
+     LDC:CLR                   0.459          p1/map_addr_temp0_s_13
+    ----------------------------------------
+    Total                      4.298ns (1.787ns logic, 2.511ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DCM_descr/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 17668 / 8
+-------------------------------------------------------------------------
+Offset:              19.021ns (Levels of Logic = 11)
+  Source:            p0/posY_p0_s_2 (FF)
+  Destination:       Blue_o<0> (PAD)
+  Source Clock:      DCM_descr/pll_base_inst/CLKOUT1 rising
+
+  Data Path: p0/posY_p0_s_2 to Blue_o<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            48   0.525   2.243  p0/posY_p0_s_2 (p0/posY_p0_s_2)
+     LUT6:I0->O            1   0.254   1.112  Graphic1/GND_123_o_BUS_0002_LessThan_99_o2 (Graphic1/GND_123_o_BUS_0002_LessThan_99_o1)
+     LUT5:I0->O            1   0.254   0.958  Graphic1/GND_123_o_BUS_0002_LessThan_99_o1 (Graphic1/GND_123_o_BUS_0002_LessThan_99_o2)
+     LUT6:I2->O           14   0.254   1.557  Graphic1/posY_p0_s[9]_hcount_s[10]_AND_311_o2 (Graphic1/posY_p0_s[9]_hcount_s[10]_AND_311_o2)
+     LUT6:I1->O           15   0.254   1.383  Graphic1/posY_p0_s[9]_hcount_s[10]_AND_311_o3 (Graphic1/posY_p0_s[9]_hcount_s[10]_AND_311_o)
+     LUT5:I2->O            7   0.235   1.365  Graphic1/affich_nestor_s<3>281 (Graphic1/affich_nestor_s<3>28)
+     LUT6:I0->O            1   0.254   0.790  Graphic1/Mmux_Blue_o1815 (Graphic1/Mmux_Blue_o1815)
+     LUT6:I4->O            3   0.250   1.196  Graphic1/Mmux_Blue_o1816 (Graphic1/Mmux_Blue_o181)
+     LUT6:I1->O            1   0.254   0.910  Graphic1/Mmux_Blue_o16 (Graphic1/Mmux_Blue_o110)
+     LUT3:I0->O            1   0.235   0.910  Graphic1/Mmux_Blue_o110_SW0 (N551)
+     LUT6:I3->O            1   0.235   0.681  Graphic1/Mmux_Blue_o110 (Blue_o_0_OBUF)
+     OBUF:I->O                 2.912          Blue_o_0_OBUF (Blue_o<0>)
+    ----------------------------------------
+    Total                     19.021ns (5.916ns logic, 13.105ns route)
+                                       (31.1% logic, 68.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DCM_descr/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 147349 / 10
+-------------------------------------------------------------------------
+Offset:              22.593ns (Levels of Logic = 13)
+  Source:            VGA_controller/hcounter_s_7 (FF)
+  Destination:       Blue_o<0> (PAD)
+  Source Clock:      DCM_descr/pll_base_inst/CLKOUT0 rising
+
+  Data Path: VGA_controller/hcounter_s_7 to Blue_o<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             31   0.525   1.958  VGA_controller/hcounter_s_7 (VGA_controller/hcounter_s_7)
+     LUT6:I0->O           41   0.254   1.671  Graphic1/Mmux_hcount_s131 (Graphic1/Mmux_hcount_s13)
+     LUT2:I1->O           54   0.254   2.128  Graphic1/Mmux_hcount_s61 (Graphic1/hcount_s<4>)
+     LUT6:I2->O            5   0.254   1.271  Graphic1/n0490<0>1 (Graphic1/n0490<0>)
+     LUT6:I1->O            3   0.254   1.196  Graphic1/Mram__n0983321 (Graphic1/Mram__n098332)
+     LUT6:I1->O            3   0.254   1.221  Graphic1/Mram__n098333 (Graphic1/Mram__n09833)
+     LUT6:I0->O            1   0.254   0.958  Graphic1/Mmux_affich_mur_sol_s15 (Graphic1/Mmux_affich_mur_sol_s14)
+     LUT6:I2->O           15   0.254   1.383  Graphic1/Mmux_affich_mur_sol_s19 (Graphic1/affich_mur_sol_s)
+     LUT5:I2->O            1   0.235   0.682  Graphic1/Mmux_Blue_o1813 (Graphic1/Mmux_Blue_o1813)
+     LUT6:I5->O            3   0.254   1.196  Graphic1/Mmux_Blue_o1816 (Graphic1/Mmux_Blue_o181)
+     LUT6:I1->O            1   0.254   0.910  Graphic1/Mmux_Blue_o16 (Graphic1/Mmux_Blue_o110)
+     LUT3:I0->O            1   0.235   0.910  Graphic1/Mmux_Blue_o110_SW0 (N551)
+     LUT6:I3->O            1   0.235   0.681  Graphic1/Mmux_Blue_o110 (Blue_o_0_OBUF)
+     OBUF:I->O                 2.912          Blue_o_0_OBUF (Blue_o<0>)
+    ----------------------------------------
+    Total                     22.593ns (6.428ns logic, 16.165ns route)
+                                       (28.5% logic, 71.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'spi_joystick_p1/SerialClock/CLKOUT'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.202ns (Levels of Logic = 2)
+  Source:            spi_joystick_p1/SPI_Int/CE (FF)
+  Destination:       SCLK_p1_o (PAD)
+  Source Clock:      spi_joystick_p1/SerialClock/CLKOUT falling
+
+  Data Path: spi_joystick_p1/SPI_Int/CE to SCLK_p1_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            2   0.525   0.834  spi_joystick_p1/SPI_Int/CE (spi_joystick_p1/SPI_Int/CE)
+     LUT2:I0->O            1   0.250   0.681  spi_joystick_p1/SPI_Int/Mmux_SCLK11 (SCLK_p1_o_OBUF)
+     OBUF:I->O                 2.912          SCLK_p1_o_OBUF (SCLK_p1_o)
+    ----------------------------------------
+    Total                      5.202ns (3.687ns logic, 1.515ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DCM_descr/pll_base_inst/CLKOUT2'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.098ns (Levels of Logic = 2)
+  Source:            spi_joystick_p1/SerialClock/CLKOUT (FF)
+  Destination:       SCLK_p1_o (PAD)
+  Source Clock:      DCM_descr/pll_base_inst/CLKOUT2 rising
+
+  Data Path: spi_joystick_p1/SerialClock/CLKOUT to SCLK_p1_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.525   0.726  spi_joystick_p1/SerialClock/CLKOUT (spi_joystick_p1/SerialClock/CLKOUT)
+     LUT2:I1->O            1   0.254   0.681  spi_joystick_p1/SPI_Int/Mmux_SCLK11 (SCLK_p1_o_OBUF)
+     OBUF:I->O                 2.912          SCLK_p1_o_OBUF (SCLK_p1_o)
+    ----------------------------------------
+    Total                      5.098ns (3.691ns logic, 1.407ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'spi_joystick_p0/SerialClock/CLKOUT'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.202ns (Levels of Logic = 2)
+  Source:            spi_joystick_p0/SPI_Int/CE (FF)
+  Destination:       SCLK_p0_o (PAD)
+  Source Clock:      spi_joystick_p0/SerialClock/CLKOUT falling
+
+  Data Path: spi_joystick_p0/SPI_Int/CE to SCLK_p0_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            2   0.525   0.834  spi_joystick_p0/SPI_Int/CE (spi_joystick_p0/SPI_Int/CE)
+     LUT2:I0->O            1   0.250   0.681  spi_joystick_p0/SPI_Int/Mmux_SCLK11 (SCLK_p0_o_OBUF)
+     OBUF:I->O                 2.912          SCLK_p0_o_OBUF (SCLK_p0_o)
+    ----------------------------------------
+    Total                      5.202ns (3.687ns logic, 1.515ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CTRL/etat_present_FSM_FFd2
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+DCM_descr/pll_base_inst/CLKOUT0|         |         |   13.714|         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DCM_descr/pll_base_inst/CLKOUT0
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CTRL/etat_present_FSM_FFd2      |         |    3.014|         |         |
+DCM_descr/pll_base_inst/CLKOUT0 |   16.674|         |         |         |
+DCM_descr/pll_base_inst/CLKOUT1 |   14.796|         |         |         |
+p0/mov_p0_i[3]_GND_57_o_Mux_37_o|         |    2.532|         |         |
+p1/mov_p1_i[3]_GND_89_o_Mux_37_o|         |    2.532|         |         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DCM_descr/pll_base_inst/CLKOUT1
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+DCM_descr/pll_base_inst/CLKOUT0   |    8.251|         |         |         |
+DCM_descr/pll_base_inst/CLKOUT1   |   11.640|         |         |         |
+spi_joystick_p0/SerialClock/CLKOUT|         |    9.274|         |         |
+spi_joystick_p1/SerialClock/CLKOUT|         |    9.249|         |         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DCM_descr/pll_base_inst/CLKOUT2
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+DCM_descr/pll_base_inst/CLKOUT2|    5.098|         |         |         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock MOSI_p1_o_OBUF
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+DCM_descr/pll_base_inst/CLKOUT0|    8.863|         |         |         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock p0/mov_p0_i[3]_GND_57_o_Mux_37_o
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+DCM_descr/pll_base_inst/CLKOUT1   |         |         |   13.452|         |
+spi_joystick_p0/SerialClock/CLKOUT|         |         |    5.826|         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock p1/mov_p1_i[3]_GND_89_o_Mux_37_o
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+DCM_descr/pll_base_inst/CLKOUT1   |         |         |   13.447|         |
+spi_joystick_p1/SerialClock/CLKOUT|         |         |    5.826|         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock spi_joystick_p0/SerialClock/CLKOUT
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+DCM_descr/pll_base_inst/CLKOUT2   |         |         |    1.903|         |
+spi_joystick_p0/SerialClock/CLKOUT|    1.324|    3.104|    4.521|         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock spi_joystick_p1/SerialClock/CLKOUT
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+DCM_descr/pll_base_inst/CLKOUT2   |         |         |    1.903|         |
+spi_joystick_p1/SerialClock/CLKOUT|    1.324|    3.104|    4.521|         |
+----------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 28.99 secs
+ 
+--> 
+
+
+Total memory usage is 473220 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  267 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
+

@@ -1,0 +1,17 @@
+/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/TOP_LEVEL.ngc 1466619095
+ipcore_dir/mur_sprite_ram.ngc 1464535257
+ipcore_dir/sol_sprite_ram.ngc 1464544705
+ipcore_dir/grudu_up_sprite_ram.ngc 1464720862
+ipcore_dir/grudu_left_sprite_ram.ngc 1464721500
+ipcore_dir/grudu_down_sprite_ram.ngc 1464722397
+ipcore_dir/grudu_right_sprite_ram.ngc 1464723064
+ipcore_dir/nestor_up_sprite_ram.ngc 1464726680
+ipcore_dir/nestor_left_sprite_ram.ngc 1464770534
+ipcore_dir/nestor_down_sprite_ram.ngc 1464770829
+ipcore_dir/nestor_right_sprite_ram.ngc 1464770743
+ipcore_dir/nestor_text_ram.ngc 1465317541
+ipcore_dir/grudu_text_ram.ngc 1465317939
+ipcore_dir/end_game_screen0_ram.ngc 1465317385
+ipcore_dir/end_game_screen1_ram.ngc 1465139644
+ipcore_dir/collision_map_ram.ngc 1464717886
+OK

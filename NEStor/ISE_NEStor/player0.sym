@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="player0">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-6-22T18:6:42</timestamp>
+    <pin polarity="Input" x="0" y="-544" name="game_clk_i" />
+    <pin polarity="Input" x="0" y="-480" name="rst_i" />
+    <pin polarity="Input" x="0" y="-416" name="hit_i" />
+    <pin polarity="Input" x="0" y="-352" name="end_game_i" />
+    <pin polarity="Input" x="0" y="-288" name="mov_p0_i(3:0)" />
+    <pin polarity="Input" x="0" y="-224" name="posX_p1_i(7:0)" />
+    <pin polarity="Input" x="0" y="-160" name="posY_p1_i(7:0)" />
+    <pin polarity="Input" x="0" y="-96" name="collision_map_data0_i(0:0)" />
+    <pin polarity="Input" x="0" y="-32" name="collision_map_data1_i(0:0)" />
+    <pin polarity="Output" x="704" y="-544" name="dead_p0_o" />
+    <pin polarity="Output" x="704" y="-464" name="collision_map_addr0_o(14:0)" />
+    <pin polarity="Output" x="704" y="-384" name="collision_map_addr1_o(14:0)" />
+    <pin polarity="Output" x="704" y="-304" name="posX_p0_o(7:0)" />
+    <pin polarity="Output" x="704" y="-224" name="posY_p0_o(7:0)" />
+    <pin polarity="Output" x="704" y="-144" name="orient_p0_o(1:0)" />
+    <pin polarity="Output" x="704" y="-64" name="hp_p0_o(4:0)" />
+    <graph>
+        <rect width="576" x="64" y="-576" height="576" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="352" y="-584" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin game_clk_i" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin rst_i" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin hit_i" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin end_game_i" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin mov_p0_i(3:0)" />
+        <rect width="64" x="0" y="-300" height="24" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin posX_p1_i(7:0)" />
+        <rect width="64" x="0" y="-236" height="24" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin posY_p1_i(7:0)" />
+        <rect width="64" x="0" y="-172" height="24" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin collision_map_data0_i(0:0)" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin collision_map_data1_i(0:0)" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="632" y="-544" type="pin dead_p0_o" />
+        <line x2="704" y1="-544" y2="-544" x1="640" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="632" y="-464" type="pin collision_map_addr0_o(14:0)" />
+        <rect width="64" x="640" y="-476" height="24" />
+        <line x2="704" y1="-464" y2="-464" x1="640" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="632" y="-384" type="pin collision_map_addr1_o(14:0)" />
+        <rect width="64" x="640" y="-396" height="24" />
+        <line x2="704" y1="-384" y2="-384" x1="640" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="632" y="-304" type="pin posX_p0_o(7:0)" />
+        <rect width="64" x="640" y="-316" height="24" />
+        <line x2="704" y1="-304" y2="-304" x1="640" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="632" y="-224" type="pin posY_p0_o(7:0)" />
+        <rect width="64" x="640" y="-236" height="24" />
+        <line x2="704" y1="-224" y2="-224" x1="640" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="632" y="-144" type="pin orient_p0_o(1:0)" />
+        <rect width="64" x="640" y="-156" height="24" />
+        <line x2="704" y1="-144" y2="-144" x1="640" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="632" y="-64" type="pin hp_p0_o(4:0)" />
+        <rect width="64" x="640" y="-76" height="24" />
+        <line x2="704" y1="-64" y2="-64" x1="640" />
+    </graph>
+</symbol>

@@ -1,0 +1,3 @@
+vhdtdtfi -lib work ../vhd/local.vhd -lib work ../vhd/player0.vhd -prj ISE_NEStor -o player0.spl -module player0 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 player0.spl {/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/player0.sym} 
+vhdtdtfi -prj ISE_NEStor -o "/home/bruno/Dropbox/Projet Sysnum/Code/NEStor/ISE_NEStor/player0.vhi" -module player0 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../vhd/local.vhd -lib work ../vhd/player0.vhd 

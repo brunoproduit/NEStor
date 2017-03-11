@@ -1,0 +1,70 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/ISE_test_avec_spi/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/ISE_test_avec_spi/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: SPI_joystick_ctrl.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/local.vhd" into library work
+Parsing package <local>.
+Parsing VHDL file "/home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/SPI_joystick_ctrl.vhd" into library work
+Parsing entity <SPI_joystick_ctrl>.
+Parsing architecture <Behavioral> of entity <spi_joystick_ctrl>.
+ERROR:HDLCompiler:607 - "/home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/SPI_joystick_ctrl.vhd" Line 78: Multiple declarations of unsigned included via multiple use clauses; none are made directly visible
+INFO:HDLCompiler:1408 - "/build/xfndry10/P.20131013/rtf/vhdl/xst/src/numeric_std.vhd" Line 65. unsigned is declared here
+Another match is here
+ERROR:HDLCompiler:607 - "/home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/SPI_joystick_ctrl.vhd" Line 79: Multiple declarations of unsigned included via multiple use clauses; none are made directly visible
+INFO:HDLCompiler:1408 - "/build/xfndry10/P.20131013/rtf/vhdl/xst/src/numeric_std.vhd" Line 65. unsigned is declared here
+Another match is here
+ERROR:HDLCompiler:69 - "/home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/SPI_joystick_ctrl.vhd" Line 82: <upper_sensibility_joystick_c> is not declared.
+ERROR:HDLCompiler:69 - "/home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/SPI_joystick_ctrl.vhd" Line 83: <lower_sensibility_joystick_c> is not declared.
+ERROR:HDLCompiler:69 - "/home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/SPI_joystick_ctrl.vhd" Line 84: <lower_sensibility_joystick_c> is not declared.
+ERROR:HDLCompiler:69 - "/home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/SPI_joystick_ctrl.vhd" Line 85: <upper_sensibility_joystick_c> is not declared.
+ERROR:HDLCompiler:854 - "/home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/SPI_joystick_ctrl.vhd" Line 40: Unit <behavioral> ignored due to previous errors.
+VHDL file /home/bruno/Dropbox/Projet Sysnum/projet/Code/NEStor/vhd/SPI_joystick_ctrl.vhd ignored due to errors
+--> 
+
+
+Total memory usage is 303580 kilobytes
+
+Number of errors   :    7 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

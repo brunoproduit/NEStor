@@ -1,0 +1,52 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Joachim\Dropbox\Projet_syst_num\projet\Code\NEStor\ISE_Joachim
+Ecounter
+Z1 w1465496798
+Z2 DPx4 work 5 local 0 22 NHLoN8df6U9gCJCXJ;]`@1
+Z3 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z5 8../vhd/counter.vhd
+Z6 F../vhd/counter.vhd
+l0
+L25
+VNc_:;2TD73zMkjnLD6Fgm2
+!s100 l:g]d4O@<6A7X`D]EMl9z2
+Z7 OX;C;6.5c;42
+31
+Z8 o-explicit -93 -O0
+Z9 tExplicit 1
+Abehavioral
+R2
+R3
+R4
+Z10 DEx4 work 7 counter 0 22 Nc_:;2TD73zMkjnLD6Fgm2
+l35
+L33
+Vn==`e>`ZgmCNmG^9=7Hhh1
+!s100 T87jGIQEK1WkHFEhaAVa>3
+R7
+31
+Z11 Mx3 4 ieee 14 std_logic_1164
+Z12 Mx2 4 ieee 11 numeric_std
+Z13 Mx1 4 work 5 local
+R8
+R9
+Plocal
+R3
+R4
+w1465495136
+8../vhd/local.vhd
+F../vhd/local.vhd
+l0
+L4
+VNHLoN8df6U9gCJCXJ;]`@1
+R7
+31
+Z14 Mx2 4 ieee 14 std_logic_1164
+Mx1 4 ieee 11 numeric_std
+R8
+R9
+!s100 =B[WG97h7CEHkaN_f>=PU2
