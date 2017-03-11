@@ -5,5 +5,11 @@ Synthetisable small multiplayer shooting game written in VHDL
 - Joachim Burket
 - Bruno Produit
 
+**VHDL code**
+NEStor/vhd
+
+**ISE project**
+NEStor/ISE_NEStor
+
 **Target device**
 Xilinx Spartan 6 with a 800x600 VGA screen
