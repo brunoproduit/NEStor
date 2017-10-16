@@ -1,9 +1,14 @@
 # NEStor
 Synthetisable small multiplayer shooting game written in VHDL
 
-**Students**
+![Gameplay on beamer](https://github.com/brunoproduit/NEStor/raw/master/game.png)
+
+**Authors**
 - Joachim Burket
 - Bruno Produit
+
+**Documentation**
+rapport_projet_sysnum.pdf, in French.
 
 **VHDL code**
 NEStor/vhd
